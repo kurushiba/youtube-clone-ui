@@ -3,6 +3,7 @@ import './MyVideos.css';
 function MyVideos() {
   return (
     <main className="my-videos-content">
+      {/* チャンネルヘッダー */}
       <div className="channel-header">
         <div className="channel-info">
           <div className="my-videos-channel-avatar">
@@ -17,6 +18,7 @@ function MyVideos() {
         </div>
       </div>
 
+      {/* 動画テーブル */}
       <div className="videos-table-container">
         <table className="videos-table">
           <thead>
@@ -26,6 +28,7 @@ function MyVideos() {
               <th className="date-column">
                 <button className="sort-button">アップロード日</button>
               </th>
+              <th className="actions-column">操作</th>
             </tr>
           </thead>
           <tbody>
@@ -35,13 +38,13 @@ function MyVideos() {
                   <div className="my-videos-video-thumbnail">
                     <img
                       src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
-                      alt="テストビデオ"
+                      alt="テスト動画"
                       className="thumbnail-image"
                     />
                   </div>
                   <div className="my-videos-video-details">
-                    <h3 className="my-videos-video-title">テストビデオ</h3>
-                    <p className="video-description">テストビデオの説明</p>
+                    <h3 className="my-videos-video-title">テスト動画</h3>
+                    <p className="video-description">テスト動画の説明</p>
                   </div>
                 </div>
               </td>
@@ -68,6 +71,9 @@ function MyVideos() {
                 <div className="date-info">
                   <div className="upload-date">2025-01-01 12:00:00</div>
                 </div>
+              </td>
+              <td className="actions-cell">
+                <button className="delete-button">削除</button>
               </td>
             </tr>
           </tbody>
