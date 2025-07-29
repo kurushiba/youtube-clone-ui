@@ -35,14 +35,14 @@ function EditProfile() {
                     </svg>
                   </div>
                   <p className="drop-text">
-                    新しいアバター画像をドラッグ＆ドロップするか
+                    新しいアバター画像をドラッグ＆ドロップ
                   </p>
                   <label className="file-select-button">
                     ファイルを選択
                     <input type="file" accept="image/*" hidden />
                   </label>
                   <p className="file-format-text">
-                    対応形式: JPG, PNG, GIF など
+                    対応形式: JPG, PNG
                   </p>
                 </div>
                 {/* <button
