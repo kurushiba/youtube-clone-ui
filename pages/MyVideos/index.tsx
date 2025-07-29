@@ -60,7 +60,6 @@ function MyVideos() {
                   </div>
                   <select
                     className="visibility-select"
-                    onClick={(e) => e.stopPropagation()}
                   >
                     <option value="公開">公開</option>
                     <option value="非公開">非公開</option>
